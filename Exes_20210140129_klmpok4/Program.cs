@@ -10,5 +10,11 @@ namespace Exes_20210140129_klmpok4
     {
         int ND, NB, max = 5;
         int[] queue_array = new int[5];
+
+        public Program()
+        {
+            ND = -1;
+            NB = -1;
+        }
     }
 }
