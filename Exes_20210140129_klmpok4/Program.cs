@@ -140,6 +140,10 @@ namespace Exes_20210140129_klmpok4
                             break;
                     }
                 }
+                catch(Exception e)
+                {
+                    Console.WriteLine("Check for the values entered");
+                }
             }
         }
     }
