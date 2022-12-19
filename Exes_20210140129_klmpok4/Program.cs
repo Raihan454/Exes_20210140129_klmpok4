@@ -60,5 +60,40 @@ namespace Exes_20210140129_klmpok4
                     ND = ND + 1;
             }
         }
+        public void display()
+        {
+            int ND_position = ND;
+            int NB_position = NB;
+            if (ND == -1)
+            {
+                Console.WriteLine("Queue is empty\n");
+                return ;
+            }
+            Console.WriteLine("\nElements in the queue are .................\n");
+            if (ND_position <= NB_position)
+            {
+                while(ND_position <= NB_position)
+                {
+                    Console.Write(queue_array[ND_position] + "   ");
+                    ND_position++;
+                }
+                Console.WriteLine();
+            }
+            else
+            {
+                while (ND_position <= max - 1)
+                {
+                    Console.Write(queue_array[ND_position] + "   ");
+                    ND_position++;
+                }
+                ND_position = 0;
+                while (ND_position <= NB_position)
+                {
+                    Console.Write(queue_array[ND_position] + "   ");
+                    ND_position++;
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
