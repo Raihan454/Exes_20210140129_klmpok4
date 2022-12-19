@@ -131,6 +131,13 @@ namespace Exes_20210140129_klmpok4
                                 queue.display();
                             }
                             break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid option !!");
+                            }
+                            break;
                     }
                 }
             }
