@@ -38,5 +38,27 @@ namespace Exes_20210140129_klmpok4
             }
           queue_array[NB] = element;
         }
+        public void delete()
+        {
+            if (ND == -1)
+            {
+                Console.WriteLine("\nQueue underflow\n");
+                return;
+            }
+            Console.WriteLine("\nThe Element deleted from the queue is" + queue_array[ND]
+                + "\n");
+            if(ND == NB)
+            {
+                ND = -1;
+                NB = -1;
+            }
+            else
+            {
+                if (ND == max - 1)
+                    ND = 0;
+                else
+                    ND = ND + 1;
+            }
+        }
     }
 }
