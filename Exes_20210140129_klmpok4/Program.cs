@@ -126,7 +126,11 @@ namespace Exes_20210140129_klmpok4
                                 queue.delete();
                             }
                             break;
-
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
                     }
                 }
             }
