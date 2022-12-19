@@ -8,12 +8,7 @@ namespace Exes_20210140129_klmpok4
 {
     class Program
     {
-
-    }
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-        }
+        int ND, NB, max = 5;
+        int[] queue_array = new int[5];
     }
 }
