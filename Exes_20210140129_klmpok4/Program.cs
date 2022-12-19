@@ -112,8 +112,16 @@ namespace Exes_20210140129_klmpok4
                     ch = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
                     switch (ch)
-                    { 
-                    
+                    {
+                        case '1':
+                            {
+                                Console.WriteLine("Enter a abjad:  ");
+                                int abjad = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                queue.input(abjad);
+                            }
+                            break;
+
                     }
                 }
             }
